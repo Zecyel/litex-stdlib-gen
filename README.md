@@ -6,7 +6,6 @@ A testset of litexlang
 The `prompt/` folder is gitignored. Generate by running the following code: (Don't forget to clone golitex and litex-tutorial repos!)
 
 ```bash
-python autogen/dump_folder.py --path ../golitex/examples/testings/ -o ./prompt/testings.txt
 python autogen/dump_folder.py --path ../golitex/examples/comprehensive_examples/ -o ./prompt/examples.txt
 python autogen/dump_folder.py --path ../litex-tutorial/Tutorial/ -o ./prompt/tutor.txt
 ```

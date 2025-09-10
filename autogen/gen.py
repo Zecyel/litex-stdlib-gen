@@ -96,7 +96,8 @@ The Documentation is: {documentation}
             full_prompt = f"{prompt}\nCurrent library: {current_library}\nUser prompt: {user_prompt}"
             try:
                 resp = ask(full_prompt, model=model)
-                new_library = current_library + f"\n{resp}"
+                litex_code = extract_litex_code(resp)
+                new_library = current_library + f"\n{litex_code}"
                 result = pylitex.run(new_library)
                 if result["success"]:
                     print("The LLM generated code verified \033[32mSUCCESSFULLY.\033[0m")
