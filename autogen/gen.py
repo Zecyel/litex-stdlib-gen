@@ -42,7 +42,7 @@ def tui_choice(choices: list[str], prompt: str = "Enter your choice: ", error_ms
             print(error_msg)
     
 def main(model: str = "deepseek-r1-250528"):
-    topic = input("Enter the top of standard library: ")
+    topic = input("Enter the topic of standard library: ")
 
     tutor = load_prompt('../prompt/tutor.txt')
     examples = load_prompt('../prompt/examples.txt')
